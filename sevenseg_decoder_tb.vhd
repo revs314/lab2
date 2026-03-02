@@ -69,52 +69,52 @@ test_process : process
 	
 	--Test 0
     w_i_Hex <= x"0"; wait for 10 ns;
-            assert w_o_seg = "0000001" report "error on 0" severity failure;
+            assert w_o_seg = "1000000" report "error on 0" severity failure;
     --Test 1
     w_i_Hex <= x"1"; wait for 10 ns;
-            assert w_o_seg = "1001111" report "error on 1" severity failure;	
+            assert w_o_seg = "1111001" report "error on 1" severity failure;	
     --Test 2
     w_i_Hex <= x"2"; wait for 10 ns;
-            assert w_o_seg = "0010010" report "error on 2" severity failure;
+            assert w_o_seg = "0100100" report "error on 2" severity failure;
     --Test 3
     w_i_Hex <= x"3"; wait for 10 ns;
-            assert w_o_seg = "0000110" report "error on 3" severity failure;
+            assert w_o_seg = "0110000" report "error on 3" severity failure;
     --Test 4
     w_i_Hex <= x"4"; wait for 10 ns;
-            assert w_o_seg = "1001100" report "error on 4" severity failure;
+            assert w_o_seg = "0011001" report "error on 4" severity failure;
     --Test 5
     w_i_Hex <= x"5"; wait for 10 ns;
-            assert w_o_seg = "0100100" report "error on 5" severity failure;
+            assert w_o_seg = "0010010" report "error on 5" severity failure;
     --Test 6
     w_i_Hex <= x"6"; wait for 10 ns;
-            assert w_o_seg = "0100000" report "error on 6" severity failure;
+            assert w_o_seg = "0000010" report "error on 6" severity failure;
     --Test 7
     w_i_Hex <= x"7"; wait for 10 ns;
-            assert w_o_seg = "0001111" report "error on 7" severity failure;
+            assert w_o_seg = "1111000" report "error on 7" severity failure;
     --Test 8
     w_i_Hex <= x"8"; wait for 10 ns;
             assert w_o_seg = "0000000" report "error on 8" severity failure;
     --Test 9
     w_i_Hex <= x"9"; wait for 10 ns;
-            assert w_o_seg = "0000100" report "error on 9" severity failure;
+            assert w_o_seg = "0010000" report "error on 9" severity failure;
     --Test A
     w_i_Hex <= x"A"; wait for 10 ns;
             assert w_o_seg = "0001000" report "error on A" severity failure;
     --Test B
     w_i_Hex <= x"B"; wait for 10 ns;
-            assert w_o_seg = "1100000" report "error on B" severity failure;
+            assert w_o_seg = "0000011" report "error on B" severity failure;
     --Test C
     w_i_Hex <= x"C"; wait for 10 ns;
-            assert w_o_seg = "1110010" report "error on C" severity failure;
+            assert w_o_seg = "0100111" report "error on C" severity failure;
     --Test D
     w_i_Hex <= x"D"; wait for 10 ns;
-            assert w_o_seg = "1000010" report "error on D" severity failure;
+            assert w_o_seg = "0100001" report "error on D" severity failure;
     --Test E
     w_i_Hex <= x"E"; wait for 10 ns;
-            assert w_o_seg = "0110000" report "error on E" severity failure;
+            assert w_o_seg = "0000110" report "error on E" severity failure;
      --Test F
     w_i_Hex <= x"F"; wait for 10 ns;
-            assert w_o_seg = "0111000" report "error on F" severity failure;
+            assert w_o_seg = "0001110" report "error on F" severity failure;
             
     w_i_Hex <= "UUUU"; wait for 10 ns; -- tests other inputs
     
