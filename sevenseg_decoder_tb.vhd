@@ -32,6 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity sevenseg_decoder_tb is -- no entity here, alr defined in .vhd
+    Port ( i_Hex : in STD_LOGIC_VECTOR (3 downto 0); -- INPUT that is 4 bits HEX -> takes in values 0-F
+           o_seg : out STD_LOGIC_VECTOR (6 downto 0)); -- OUTPUT that is 7 bits -> controls Sa - Sg
 end sevenseg_decoder_tb;
 
 
