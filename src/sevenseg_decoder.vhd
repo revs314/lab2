@@ -49,7 +49,7 @@ begin
         "0000010" when "0110", -- when 6, light up all segments except for b
         "1111000" when "0111", -- when 7, light up a, b, c
         "0000000" when "1000", -- when 8, light up all
-        "0010000" when "1001", -- when 9, light up all segments except for e and d
+        "0011000" when "1001", -- when 9, light up all segments except for e and d
         "0001000" when "1010", -- A
         "0000011" when "1011", -- B 
         "0100111" when "1100", -- C

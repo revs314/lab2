@@ -96,7 +96,7 @@ test_process : process
             assert w_o_seg = "0000000" report "error on 8" severity failure;
     --Test 9
     w_i_Hex <= x"9"; wait for 10 ns;
-            assert w_o_seg = "0010000" report "error on 9" severity failure;
+            assert w_o_seg = "0011000" report "error on 9" severity failure;
     --Test A
     w_i_Hex <= x"A"; wait for 10 ns;
             assert w_o_seg = "0001000" report "error on A" severity failure;
