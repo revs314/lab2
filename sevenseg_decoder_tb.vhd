@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity sevenseg_decoder_tb is
+entity sevenseg_decoder_tb is -- no entity here, alr defined in .vhd
 end sevenseg_decoder_tb;
 
 
